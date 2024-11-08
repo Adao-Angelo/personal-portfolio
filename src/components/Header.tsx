@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import A from "./ui/A";
-import { LightbulbIcon } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 
 interface HeaderProps extends React.HTMLProps<HTMLElement> {}
 
 export default function Header(props: HeaderProps): JSX.Element {
+  const [themeState, setThemeState] = useState<"light" | "dark">();
+
+  useEffect(() => {
+    setThemeState("light");
+  }, []);
   return (
     <header className="flex justify-between items-center w-full" {...props}>
       <h1 className="text-neutral-800 font-bold text-[4.8rem] transition-all duration-300   dark:text-neutral-50">
@@ -25,8 +30,8 @@ export default function Header(props: HeaderProps): JSX.Element {
           <li>
             <A href="#contact">Resume</A>
           </li>
-          <li>
-            <LightbulbIcon>Mode</LightbulbIcon>
+          <li className="cursor-pointer">
+            {themeState == "light" ? <Sun></Sun> : <Moon></Moon>}
           </li>
         </ul>
       </nav>

@@ -1,14 +1,20 @@
 import React from "react";
 
-interface H1Props extends React.AnchorHTMLAttributes<HTMLParagraphElement> {}
+interface H1Props extends React.HTMLProps<HTMLHeadingElement> {
+  _className?: string;
+}
 
-export default function H1(props: H1Props): JSX.Element {
+export default function H3({
+  _className,
+  children,
+  ...rest
+}: H1Props): JSX.Element {
   return (
     <h1
-      {...props}
-      className="text-neutral-800 font-bold text-[5.6rem] transition-all duration-300  dark:text-neutral-50"
+      {...rest}
+      className={`font-bold text-[2.8rem] transition-all duration-300 ${_className}`}
     >
-      {props.children}
+      {children}
     </h1>
   );
 }
