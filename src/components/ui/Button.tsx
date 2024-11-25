@@ -8,7 +8,7 @@ export default function Button({ variant = "default", children }: ButtonProps) {
     "rounded-[0.5rem] py-[1.5rem] px-[1.6rem] text-center font-bold text-[1.4rem]";
 
   const defaultStyles =
-    "bg-purple-500 text-neutral-100 border-none hover:bg-purple-600";
+    "bg-purple-500 text-white border-none hover:bg-purple-600";
   const outlineStyles =
     "bg-none border-[0.1rem] border-purple-500 text-neutral-900 hover:bg-purple-100";
   const blackStyles = "bg-black text-white border-none hover:bg-gray-800";

@@ -18,7 +18,7 @@ export default {
           900: "var(--purple-900)",
         },
         neutral: {
-          40: "var(--neutral-50)",
+          50: "var(--neutral-50)",
           100: "var(--neutral-100)",
           200: "var(--neutral-200)",
           300: "var(--neutral-300)",
