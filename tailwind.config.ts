@@ -30,6 +30,7 @@ export default {
           900: "var(--neutral-900)",
         },
       },
+
       fontFamily: {
         sans: ["Inter", "sans-serif"],
         sora: ["Sora", "sans-serif"],

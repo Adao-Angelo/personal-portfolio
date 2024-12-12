@@ -1,8 +1,8 @@
 import { ArrowUp, Github, Linkedin, Mail } from "lucide-react";
+import A from "./ui/A";
 import Button from "./ui/Button";
 import H3 from "./ui/H3";
 import Text from "./ui/Text";
-import A from "./ui/A";
 
 export default function Footer() {
   return (

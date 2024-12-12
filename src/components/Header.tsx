@@ -1,6 +1,6 @@
+import { Moon, Sun } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import A from "./ui/A";
-import { Moon, Sun } from "lucide-react";
 
 interface HeaderProps extends React.HTMLProps<HTMLElement> {}
 
@@ -8,7 +8,7 @@ export default function Header(props: HeaderProps): JSX.Element {
   const [themeState, setThemeState] = useState<"light" | "dark">();
 
   useEffect(() => {
-    setThemeState("light");
+    setThemeState("dark");
   }, []);
   return (
     <header className="flex justify-between items-center w-full" {...props}>
@@ -30,7 +30,12 @@ export default function Header(props: HeaderProps): JSX.Element {
           <li>
             <A href="#contact">Resume</A>
           </li>
-          <li className="cursor-pointer">
+          <li
+            className="cursor-pointer"
+            onClick={() => {
+              setThemeState(themeState === "light" ? "dark" : "light");
+            }}
+          >
             {themeState == "light" ? <Sun></Sun> : <Moon></Moon>}
           </li>
         </ul>

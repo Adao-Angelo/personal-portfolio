@@ -6,8 +6,8 @@ import H1 from "./components/ui/H1";
 import H2 from "./components/ui/H2";
 import P from "./components/ui/P";
 
-import "./config/Fonts";
 import { ArrowDown, Github, Linkedin } from "lucide-react";
+import "./config/Fonts";
 
 export default function App() {
   return (
@@ -43,10 +43,18 @@ export default function App() {
             <Button variant="outline">RESUME</Button>
           </div>
 
-          <div className="m-auto mt-[12.3rem]">
-            <A href="#" className="text-">
+          <div
+            onClick={() => {
+              window.scrollTo({
+                top: 1000,
+                behavior: "smooth",
+              });
+            }}
+            className="m-auto mt-[12.3rem] hover:text-purple-600 cursor-pointer w-[5rem] hover:text-"
+          >
+            <P href="#" className="text-">
               Scroll
-            </A>
+            </P>
             <ArrowDown className="m-auto"></ArrowDown>
           </div>
 
