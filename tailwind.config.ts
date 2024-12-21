@@ -34,6 +34,9 @@ export default {
           900: "#171717",
         },
       },
+      fontFamily: {
+        sans: ["Inter"],
+      },
     },
   },
   plugins: [],
