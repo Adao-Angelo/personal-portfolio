@@ -17,16 +17,6 @@ export default function Header() {
     }
   }, []);
 
-  const toggleTheme = () => {
-    setIsDarkMode((prevMode) => {
-      const newMode = !prevMode;
-
-      localStorage.setItem("theme", newMode ? "dark" : "light");
-
-      return newMode;
-    });
-  };
-
   const toggleMenu = () => {
     setIsMenuOpen((prevState) => !prevState);
   };
