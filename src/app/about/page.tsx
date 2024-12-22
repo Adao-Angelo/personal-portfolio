@@ -193,7 +193,7 @@ export default function About() {
 
       <h2 className="font-bold font-sora text-[2rem] text-center">Interests</h2>
       <p className="text-[1.6rem]">
-        I’m passionate about leveraging technology to solve real-world problems
+        I am passionate about leveraging technology to solve real-world problems
         and constantly seek ways to improve my skills. My main interests include
         building intuitive user interfaces with modern frameworks like React and
         Next.js, as well as exploring the potential of AI in enhancing human
