@@ -2,7 +2,13 @@ import classNames from "classnames";
 import React from "react";
 
 type ButtonVariant = "primary" | "secondary";
-type ButtonState = "default" | "outline" | "disabled" | "active" | "hover";
+type ButtonState =
+  | "default"
+  | "outline"
+  | "disabled"
+  | "active"
+  | "hover"
+  | "link";
 type ButtonSize = "mobile" | "web";
 
 interface ButtonProps {
