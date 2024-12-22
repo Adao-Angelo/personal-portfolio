@@ -36,6 +36,10 @@ export default {
       },
       fontFamily: {
         sans: ["Inter"],
+        sora: ["Sora"],
+      },
+      lineHeight: {
+        base: "2rem",
       },
     },
   },
