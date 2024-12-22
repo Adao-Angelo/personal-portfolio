@@ -32,7 +32,10 @@ export default function Header() {
   };
 
   return (
-    <header className="flex justify-between items-center p-4">
+    <header
+      id={String(isDarkMode)}
+      className="flex justify-between items-center p-4"
+    >
       <h1 className="text-[3.2rem] font-bold">
         aj<span className="text-purple-600">.</span>
       </h1>
