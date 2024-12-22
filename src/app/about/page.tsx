@@ -14,8 +14,8 @@ export default function About() {
       </p>
       <p className="text-[1.6rem]">
         I believe that every challenge is an opportunity to become better and
-        that technology is a powerful tool to bring about positive change. Let's
-        create something amazing together!
+        that technology is a powerful tool to bring about positive change.
+        Let&#39;s create something amazing together!
       </p>
       <div>
         <Button>READ MORE</Button>

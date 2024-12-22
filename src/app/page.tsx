@@ -15,7 +15,7 @@ export default function Home() {
               Full-stack Developer
             </h1>
             <p className="text-[1.6rem] mb-[3.1rem]">
-              I'm a tech enthusiast and developer, specializing in building
+              I am a tech enthusiast and developer, specializing in building
               scalable and user-friendly web applications, combining expertise
               in both front-end and back-end to deliver amazing solutions.
             </p>
@@ -100,7 +100,7 @@ export default function Home() {
           <p className="text-[1.6rem]">
             I believe that every challenge is an opportunity to become better
             and that technology is a powerful tool to bring about positive
-            change. Let's create something amazing together!
+            change. Let&#39;s create something amazing together!
           </p>
           <div>
             <Button>READ MORE</Button>
