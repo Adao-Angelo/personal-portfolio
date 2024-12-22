@@ -1,6 +1,7 @@
 import { Project } from "@/components/Project";
 import Button from "@/components/ui/Button";
 import { ArrowDown, Github, Linkedin } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,12 +22,20 @@ export default function Home() {
             </p>
             <div>
               <div className="flex gap-[2rem] my-[1.1rem]">
-                <Button>
-                  <Github></Github>
-                </Button>
-                <Button>
-                  <Linkedin></Linkedin>
-                </Button>
+                <Link target="_blank" href="https://github.com/Adao-Angelo">
+                  <Button>
+                    <Github></Github>
+                  </Button>
+                </Link>
+                <Link
+                  target="_blank"
+                  href="https://www.linkedin.com/in/ad%C3%A3o-%C3%A2ngelo-jo%C3%A3o-238233335/"
+                >
+                  <Button>
+                    <Linkedin></Linkedin>
+                  </Button>
+                </Link>
+
                 <Button state="outline">GET IN TOUCH </Button>
               </div>
             </div>
@@ -103,7 +112,9 @@ export default function Home() {
             change. Let&#39;s create something amazing together!
           </p>
           <div>
-            <Button>READ MORE</Button>
+            <Link href="/about">
+              <Button>READ MORE</Button>
+            </Link>
           </div>
           <div className="">
             <img className="rounded-[0.5rem]" src="/dev.jpeg" alt="dev" />
