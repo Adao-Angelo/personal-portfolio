@@ -19,7 +19,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${sora.variable}
         antialiased p-[2.6rem] dark:text-neutral-50 text-neutral-900
-        bg-neutral-50 min-h-[full]: dark:bg-neutral-900 `}
+        bg-neutral-50 min-h-[full]: dark:bg-neutral-900  md:py-[7.4rem] md:px-[3.8rem] lg:px-[12.8rem]  `}
       >
         <Header />
         {children}
