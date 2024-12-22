@@ -5,8 +5,3 @@
 html {
   font-size: 62.5%; /* 1rem = 10px */
 }
-@layer base {
-  body {
-    @apply leading-base;
-  }
-}
