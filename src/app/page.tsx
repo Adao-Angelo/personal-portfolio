@@ -46,7 +46,7 @@ export default function Home() {
           </Button>
         </div>
         {/* __Projects */}
-        <div className="">
+        <div id="project">
           <h2 className="font-bold font-sora mt-[3.5rem] mb-[3rem] md:mb-[11.4rem] text-[2.8rem] text-center">
             Projects
           </h2>

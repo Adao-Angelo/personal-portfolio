@@ -6,10 +6,10 @@ export default function Footer() {
     <footer className="text-center prose md:mt-[15.7rem]">
       <div className="md:flex md:justify-between md:mb-[5.9rem]">
         <div>
-          <h2 className="font-bold md:text-left font-sora text-[2rem] mb-[1.1rem] leading-loose">
+          <h2 className="font-bold md:text-left font-sora text-[2rem] md:text-[2.4rem] lg:text-[2.8rem] mb-[1.1rem] leading-loose">
             Let’s connect
           </h2>
-          <p className="text-[1.2rem] md:text-left leading-loose px-[4rem] md:px-[0]">
+          <p className="text-[1.2rem] md:text-[1.4rem]  lg:text-[1.8rem]  md:text-left leading-loose px-[4rem] md:px-[0]">
             Shoot me email to chat about my work or just like to say hey 👋
           </p>
         </div>
