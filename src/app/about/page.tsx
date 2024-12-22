@@ -9,7 +9,7 @@ export default function About() {
           <h2 className="font-bold font-sora text-[2rem]">Quote...</h2>
           <p className="text-[1.6rem]">
             I believe technology, when combined with passion and persistence,
-            has the power to create a better world."
+            has the power to create a better world.
           </p>
 
           <p className="text-[1.6rem]">
