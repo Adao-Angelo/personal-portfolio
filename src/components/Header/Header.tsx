@@ -17,22 +17,15 @@ export default function Header() {
     }
   }, []);
 
-  const toggleTheme = () => {
-    setIsDarkMode((prevMode) => {
-      const newMode = !prevMode;
-
-      localStorage.setItem("theme", newMode ? "dark" : "light");
-
-      return newMode;
-    });
-  };
-
   const toggleMenu = () => {
     setIsMenuOpen((prevState) => !prevState);
   };
 
   return (
-    <header className="flex justify-between items-center p-4">
+    <header
+      id={String(isDarkMode)}
+      className="flex justify-between items-center p-4"
+    >
       <h1 className="text-[3.2rem] font-bold">
         aj<span className="text-purple-600">.</span>
       </h1>

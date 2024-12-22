@@ -4,12 +4,12 @@ export default function About() {
       <h1 className="font-bold font-sora text-[3.2rem] text-center md:mb-[2rem]">
         About Me
       </h1>
-      <div className="flex flex-col md:flex-row-reverse gap-[2.9rem] md:justify-between md:mb-[17rem]">
+      <div className="flex flex-col md:flex-row-reverse gap-[2.9rem] md:gap-[5rem] md:mb-[17rem]">
         <div className="flex flex-col gap-[2.9rem] md:w-[54.2rem]">
           <h2 className="font-bold font-sora text-[2rem]">Quote...</h2>
           <p className="text-[1.6rem]">
-            "I believe technology, when combined with passion and persistence,
-            has the power to create a better world."
+            I believe technology, when combined with passion and persistence,
+            has the power to create a better world.
           </p>
 
           <p className="text-[1.6rem]">
