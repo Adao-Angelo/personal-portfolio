@@ -11,7 +11,7 @@ export default function Home() {
         <div className="mt-[7.9rem] md:text-center">
           <div>
             <h1 className="font-sora font-bold text-[3.2rem] md:text-[5.6rem]">
-              Hi, I am Adam John.
+              Hi, I am Adão Ângelo João.
             </h1>
             <h1 className="font-sora font-bold text-[2.8rem] md:text-[3.2rem]  mt-[0.5rem] mb-[2.9rem] text-purple-900 dark:text-purple-300 ">
               Full-stack Developer

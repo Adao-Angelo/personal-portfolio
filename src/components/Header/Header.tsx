@@ -88,7 +88,7 @@ export default function Header() {
           </Link>
 
           <button
-            className="text-[1.6rem] px-[2rem] py-[1rem] rounded-full bg-purple-600 hover:bg-purple-700 dark:hover:bg-purple-400 text-purple-50 dark:text-purple-50"
+            className="text-[1.6rem] px-[2rem] py-[1rem] rounded-full bg-purple-500 hover:bg-purple-600 dark:hover:bg-purple-500 dark:bg-purple-400 text-purple-50 dark:text-purple-50"
             onClick={toggleTheme}
           >
             {theme == "dark" ? <Sun></Sun> : <Moon></Moon>}
