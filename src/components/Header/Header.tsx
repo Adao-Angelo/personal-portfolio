@@ -23,7 +23,8 @@ export default function Header() {
 
   return (
     <header
-      id={String(isDarkMode)}
+      id="Header"
+      dir={String(isDarkMode)}
       className="flex justify-between items-center p-4"
     >
       <h1 className="text-[3.2rem] font-bold">

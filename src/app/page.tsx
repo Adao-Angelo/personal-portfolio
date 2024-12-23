@@ -1,6 +1,7 @@
 import { Project } from "@/components/Project";
+import ScrollToDown from "@/components/scrollTodown";
 import Button from "@/components/ui/Button";
-import { ArrowDown, Github, Linkedin } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -35,15 +36,18 @@ export default function Home() {
                   </Button>
                 </Link>
 
-                <Button state="outline">GET IN TOUCH </Button>
+                <Link
+                  target="_blank"
+                  href="https://www.linkedin.com/in/ad%C3%A3o-%C3%A2ngelo-jo%C3%A3o-238233335/"
+                >
+                  <Button state="outline">GET IN TOUCH </Button>
+                </Link>
               </div>
             </div>
           </div>
         </div>
         <div className="flex justify-center mt-[5rem] items-center">
-          <Button variant="secondary">
-            <ArrowDown></ArrowDown>
-          </Button>
+          <ScrollToDown to="project"></ScrollToDown>
         </div>
         {/* __Projects */}
         <div id="project">
