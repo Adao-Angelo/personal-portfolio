@@ -4,6 +4,8 @@ A modern and responsive developer portfolio built using **Next.js**, **TypeScrip
 
 ---
 
+<img src="./assets/Cover.png"/>
+
 ## 🚀 Features
 
 - **Responsive Design**: Fully responsive layout optimized for desktops, tablets, and mobile devices.

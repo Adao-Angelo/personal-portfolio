@@ -57,83 +57,182 @@ export default function Home() {
           {/* __Project Cards */}
           <div className="grid md:grid-cols-2 gap-[3rem] lg:gap-[7rem] ">
             <Project.Root>
-              <Project.Image
-                src="https://via.placeholder.com/300"
-                alt="Project Image"
-              />
+              <Project.Image src="projects/ai.webp" alt="Project Image" />
               <Project.Content
-                title="Awesome Project"
-                description="This is a description of the project."
+                title="Chat AI "
+                description="ChatBot is an advanced AI-powered chatbot built 
+                with Next.js and TypeScript, leveraging the Vercel SDK for 
+                AI integration and Google's Gemini for semantic understanding.
+                 The chatbot is designed to provide intelligent, real-time 
+                 conversations while ensuring seamless user experience with
+                  Tailwind CSS for modern design."
               />
               <Project.Technologies>
-                <span>React</span>
-                <span>TypeScript</span>
-                <span>Next.js</span>
+                <img
+                  src="https://img.shields.io/badge/-Typescript-05122A?style=flat&logo=typescript"
+                  alt="TypeScript"
+                />
+                <img
+                  src="https://img.shields.io/badge/-Gemini-05122A?style=flat&logo=google"
+                  alt="Gemini"
+                />
+                <img
+                  src="https://img.shields.io/badge/-AI-05122A?style=flat&logo=artificial-intelligence"
+                  alt="AI"
+                />
+                <img
+                  src="https://img.shields.io/badge/-Next.Js-05122A?style=flat&logo=next.js"
+                  alt="Next.js"
+                />
               </Project.Technologies>
 
               <Project.Actions>
-                <Button>VIEW CODE</Button>
-                <Button state="outline">LIVE DEMO</Button>
+                <Link
+                  href="https://github.com/Adao-Angelo/chat-AI"
+                  target="_blank"
+                >
+                  <Button>VIEW CODE</Button>
+                </Link>
+                {/* <Button state="outline">LIVE DEMO</Button> */}
               </Project.Actions>
             </Project.Root>
             <Project.Root>
-              <Project.Image
-                src="https://via.placeholder.com/300"
-                alt="Project Image"
-              />
+              <Project.Image src="/projects/" alt="Project Image" />
               <Project.Content
-                title="Awesome Project"
-                description="This is a description of the project."
+                title="Clock Work"
+                description="
+                This is a sleek and efficient desktop application for the 
+                clock work technique, developed using Tauri, React, and Rust. 
+                The app is designed to help users boost productivity by effectively 
+                managing their work and break intervals. With a lightweight architecture and modern 
+                design, it provides a seamless experience for staying focused and achieving goals.
+                "
               />
               <Project.Technologies>
-                <span>React</span>
-                <span>TypeScript</span>
-                <span>Next.js</span>
+                <img
+                  src="https://img.shields.io/badge/-Typescript-05122A?style=flat&logo=typescript"
+                  alt="TypeScript"
+                />
+                <img
+                  src="https://img.shields.io/badge/-React.Js-05122A?style=flat&logo=react"
+                  alt="React.js"
+                />
+                <img
+                  src="https://img.shields.io/badge/-Tauri-05122A?style=flat&logo=tauri"
+                  alt="Tauri"
+                />
+                <img
+                  src="https://img.shields.io/badge/-TailwindCSS-05122A?style=flat&logo=tailwindcss"
+                  alt="Tailwind CSS"
+                />
+                <img
+                  src="https://img.shields.io/badge/-Rust-05122A?style=flat&logo=rust"
+                  alt="Rust"
+                />
               </Project.Technologies>
 
               <Project.Actions>
-                <Button>VIEW CODE</Button>
-                <Button state="outline">LIVE DEMO</Button>
+                <Link
+                  href="https://github.com/Adao-Angelo/clock-work"
+                  target="_blank"
+                >
+                  <Button>VIEW CODE</Button>
+                </Link>
+                {/* <Button state="outline">LIVE DEMO</Button> */}
               </Project.Actions>
             </Project.Root>
             <Project.Root>
-              <Project.Image
-                src="https://via.placeholder.com/300"
-                alt="Project Image"
-              />
+              <Project.Image src="/projects/meal.png" alt="Project Image" />
               <Project.Content
-                title="Awesome Project"
-                description="This is a description of the project."
+                title="Easy-Meal"
+                description="Easy Meal is an app for shopping products aimed at improving gastronomy, made by the center
+                 Colégio Arvore Da Felicidade order to help productivity when buying foin the cafeteria. "
               />
               <Project.Technologies>
-                <span>React</span>
-                <span>TypeScript</span>
-                <span>Next.js</span>
+                <img
+                  src="https://img.shields.io/badge/-JWT-05122A?style=flat&logo=jsonwebtokens"
+                  alt="JWT"
+                />
+                <img
+                  src="https://img.shields.io/badge/-Express-05122A?style=flat&logo=express"
+                  alt="Express"
+                />
+                <img
+                  src="https://img.shields.io/badge/-TypeScript-05122A?style=flat&logo=typescript"
+                  alt="TypeScript"
+                />
+                <img
+                  src="https://img.shields.io/badge/-Prisma-05122A?style=flat&logo=prisma"
+                  alt="Prisma"
+                />
+                <img
+                  src="https://img.shields.io/badge/-PostgreSQL-05122A?style=flat&logo=postgresql"
+                  alt="PostgreSQL"
+                />
               </Project.Technologies>
 
               <Project.Actions>
-                <Button>VIEW CODE</Button>
-                <Button state="outline">LIVE DEMO</Button>
+                <p className="text-red-600 dark:text-red-400 text-[1.6rem]">
+                  This is a private repository
+                </p>
+                {/* <Button>VIEW CODE</Button>
+                <Button state="outline">LIVE DEMO</Button> */}
               </Project.Actions>
             </Project.Root>
             <Project.Root>
-              <Project.Image
-                src="https://via.placeholder.com/300"
-                alt="Project Image"
-              />
+              <Project.Image src="/" alt="Project Image" />
               <Project.Content
-                title="Awesome Project"
-                description="This is a description of the project."
+                title="NO offense Backend"
+                description="
+                No Offense is a project designed to automatically 
+                censor offensive words and phrases in posts, leveraging 
+                advanced context and semantic analysis to detect and suggest 
+                corrections for offensive language. The goal is to promote a 
+                healthier and more inclusive environment on communication platforms."
               />
               <Project.Technologies>
-                <span>React</span>
-                <span>TypeScript</span>
-                <span>Next.js</span>
+                <img
+                  src="https://img.shields.io/badge/-Gemini-05122A?style=flat&logo=google"
+                  alt="Gemini"
+                />
+                <img
+                  src="https://img.shields.io/badge/-Express-05122A?style=flat&logo=express"
+                  alt="Express"
+                />
+                <img
+                  src="https://img.shields.io/badge/-TypeScript-05122A?style=flat&logo=typescript"
+                  alt="TypeScript"
+                />
+                <img
+                  src="https://img.shields.io/badge/-JWT-05122A?style=flat&logo=jsonwebtokens"
+                  alt="JWT"
+                />
+                <img
+                  src="https://img.shields.io/badge/-Google%20Mail-05122A?style=flat&logo=gmail"
+                  alt="Google Mail"
+                />
+                <img
+                  src="https://img.shields.io/badge/-Docker-05122A?style=flat&logo=docker"
+                  alt="Docker"
+                />
+                <img
+                  src="https://img.shields.io/badge/-Prisma-05122A?style=flat&logo=prisma"
+                  alt="Prisma"
+                />
+                <img
+                  src="https://img.shields.io/badge/-Hugging%20Face-05122A?style=flat&logo=huggingface"
+                  alt="Hugging Face"
+                />
               </Project.Technologies>
 
               <Project.Actions>
-                <Button>VIEW CODE</Button>
-                <Button state="outline">LIVE DEMO</Button>
+                <Link
+                  href="https://github.com/Adao-Angelo/no-offense-backend"
+                  target="_blank"
+                >
+                  <Button>VIEW CODE</Button>
+                </Link>
+                {/* <Button state="outline">LIVE DEMO</Button> */}
               </Project.Actions>
             </Project.Root>
           </div>

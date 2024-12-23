@@ -1,32 +1,20 @@
 "use client";
 
-import { AlignJustify, X } from "lucide-react";
+import { useThemeContext } from "@/context/ThemeProvider";
+import { AlignJustify, Moon, Sun, X } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Header() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const storedTheme = localStorage.getItem("theme");
-    if (storedTheme) {
-      setIsDarkMode(storedTheme === "dark");
-    } else {
-      setIsDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches);
-    }
-  }, []);
+  const { theme, toggleTheme } = useThemeContext();
 
   const toggleMenu = () => {
     setIsMenuOpen((prevState) => !prevState);
   };
 
   return (
-    <header
-      id="Header"
-      dir={String(isDarkMode)}
-      className="flex justify-between items-center p-4"
-    >
+    <header id="Header" className="flex justify-between items-center p-4">
       <h1 className="text-[3.2rem] font-bold">
         aj<span className="text-purple-600">.</span>
       </h1>
@@ -46,7 +34,7 @@ export default function Header() {
               ></X>
             </div>
             <div className="flex justify-center items-center h-[80vh] ">
-              <div>
+              <div className="text-center grid gap-[2rem]">
                 <Link
                   className="block text-[1.6rem] dark:hover:text-purple-400 hover:text-purple-900 py-2"
                   href="/"
@@ -68,6 +56,12 @@ export default function Header() {
                 >
                   About
                 </Link>
+                <button
+                  className="text-[1.6rem] w-[10rem] px-[2rem] py-[1rem] rounded-full bg-purple-600 hover:bg-purple-700 dark:hover:bg-purple-400 text-purple-50 dark:text-purple-50"
+                  onClick={toggleTheme}
+                >
+                  {theme == "dark" ? <Sun></Sun> : <Moon></Moon>}
+                </button>
               </div>
             </div>
           </div>
@@ -92,6 +86,13 @@ export default function Header() {
           >
             About
           </Link>
+
+          <button
+            className="text-[1.6rem] px-[2rem] py-[1rem] rounded-full bg-purple-600 hover:bg-purple-700 dark:hover:bg-purple-400 text-purple-50 dark:text-purple-50"
+            onClick={toggleTheme}
+          >
+            {theme == "dark" ? <Sun></Sun> : <Moon></Moon>}
+          </button>
         </div>
       </div>
     </header>
