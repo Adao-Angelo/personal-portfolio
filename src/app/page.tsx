@@ -87,8 +87,13 @@ export default function Home() {
               </Project.Technologies>
 
               <Project.Actions>
-                <Button>VIEW CODE</Button>
-                <Button state="outline">LIVE DEMO</Button>
+                <Link
+                  href="https://github.com/Adao-Angelo/chat-AI"
+                  target="_blank"
+                >
+                  <Button>VIEW CODE</Button>
+                </Link>
+                {/* <Button state="outline">LIVE DEMO</Button> */}
               </Project.Actions>
             </Project.Root>
             <Project.Root>
@@ -127,8 +132,13 @@ export default function Home() {
               </Project.Technologies>
 
               <Project.Actions>
-                <Button>VIEW CODE</Button>
-                <Button state="outline">LIVE DEMO</Button>
+                <Link
+                  href="https://github.com/Adao-Angelo/clock-work"
+                  target="_blank"
+                >
+                  <Button>VIEW CODE</Button>
+                </Link>
+                {/* <Button state="outline">LIVE DEMO</Button> */}
               </Project.Actions>
             </Project.Root>
             <Project.Root>
@@ -162,8 +172,11 @@ export default function Home() {
               </Project.Technologies>
 
               <Project.Actions>
-                <Button>VIEW CODE</Button>
-                <Button state="outline">LIVE DEMO</Button>
+                <p className="text-red-600 dark:text-red-400 text-[1.6rem]">
+                  This is a private repository
+                </p>
+                {/* <Button>VIEW CODE</Button>
+                <Button state="outline">LIVE DEMO</Button> */}
               </Project.Actions>
             </Project.Root>
             <Project.Root>
@@ -213,8 +226,13 @@ export default function Home() {
               </Project.Technologies>
 
               <Project.Actions>
-                <Button>VIEW CODE</Button>
-                <Button state="outline">LIVE DEMO</Button>
+                <Link
+                  href="https://github.com/Adao-Angelo/no-offense-backend"
+                  target="_blank"
+                >
+                  <Button>VIEW CODE</Button>
+                </Link>
+                {/* <Button state="outline">LIVE DEMO</Button> */}
               </Project.Actions>
             </Project.Root>
           </div>
