@@ -28,9 +28,9 @@ export default function About() {
           </p>
         </div>
 
-        <div className="md:max-w-[36.9rem]">
+        <div className="md:max-w-[36.9rem] lg:max-w-[55rem]  ">
           <img
-            className="rounded-[0.5rem] md:h-[40rem] object-cover"
+            className="rounded-[0.5rem] md:h-full object-cover"
             src="/dev.jpeg"
             alt="Developer Portrait"
           />
