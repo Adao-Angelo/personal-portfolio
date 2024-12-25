@@ -1,5 +1,6 @@
 import { Project } from "@/components/Project";
 import ScrollToDown from "@/components/scrollTodown";
+import TypingEffect from "@/components/TypingEffect/TypingEffect";
 import Button from "@/components/ui/Button";
 import { Github, Linkedin } from "lucide-react";
 import Link from "next/link";
@@ -11,7 +12,13 @@ export default function Home() {
         <div className="mt-[7.9rem] md:text-center">
           <div>
             <h1 className="font-sora font-bold text-[3.2rem] md:text-[5.6rem]">
-              Hi, I am Adão Ângelo João.
+              <TypingEffect
+                typingSpeed={120}
+                erasingSpeed={60}
+                delayBeforeErase={2500}
+              >
+                Hi, I am Adão Ângelo João.
+              </TypingEffect>
             </h1>
             <h1 className="font-sora font-bold text-[2.8rem] md:text-[3.2rem]  mt-[0.5rem] mb-[2.9rem] text-purple-900 dark:text-purple-300 ">
               Full-stack Developer
@@ -56,7 +63,7 @@ export default function Home() {
           </h2>
           {/* __Project Cards */}
           <div className="grid md:grid-cols-2 gap-[3rem] lg:gap-[7rem] ">
-            <Project.Root>
+            <Project.Root dataAos="zoom-in-right">
               <Project.Image src="projects/ai.webp" alt="Project Image" />
               <Project.Content
                 title="Chat AI "
@@ -96,7 +103,7 @@ export default function Home() {
                 {/* <Button state="outline">LIVE DEMO</Button> */}
               </Project.Actions>
             </Project.Root>
-            <Project.Root>
+            <Project.Root dataAos="zoom-in-left">
               <Project.Image src="/projects/" alt="Project Image" />
               <Project.Content
                 title="Clock Work"
@@ -141,7 +148,7 @@ export default function Home() {
                 {/* <Button state="outline">LIVE DEMO</Button> */}
               </Project.Actions>
             </Project.Root>
-            <Project.Root>
+            <Project.Root dataAos="zoom-in-right">
               <Project.Image src="/projects/meal.png" alt="Project Image" />
               <Project.Content
                 title="Easy-Meal"
@@ -179,7 +186,7 @@ export default function Home() {
                 <Button state="outline">LIVE DEMO</Button> */}
               </Project.Actions>
             </Project.Root>
-            <Project.Root>
+            <Project.Root dataAos="zoom-in-left">
               <Project.Image src="/" alt="Project Image" />
               <Project.Content
                 title="NO offense Backend"
@@ -241,7 +248,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row gap-[6.9rem] md:justify-between mt-[7rem] md:mt-[15.7rem] mb-[6rem]">
           <div className="flex flex-col gap-[2.9rem] md:w-[50.9rem]">
             <h2 className="font-bold font-sora text-[2.8rem] ">Hi there!</h2>
-            <p className="text-[1.6rem]">
+            <p data-aos="fade-up" className="text-[1.6rem]">
               I am a passionate and driven full-stack developer with an
               unwavering love for technology. I thrive in challenging
               environments that push me beyond my comfort zone, enabling
@@ -250,7 +257,7 @@ export default function Home() {
               my skills every day, turning ideas into meaningful and
               user-centered experiences.
             </p>
-            <p className="text-[1.6rem]">
+            <p data-aos="fade-up" className="text-[1.6rem]">
               I believe that every challenge is an opportunity to become better
               and that technology is a powerful tool to bring about positive
               change. Let&#39;s create something amazing together!

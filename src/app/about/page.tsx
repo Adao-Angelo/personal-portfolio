@@ -5,7 +5,10 @@ export default function About() {
         About Me
       </h1>
       <div className="flex flex-col md:flex-row-reverse gap-[2.9rem] md:gap-[5rem] md:mb-[17rem]">
-        <div className="flex flex-col gap-[2.9rem] md:w-[54.2rem]">
+        <div
+          data-aos="fade-up"
+          className="flex flex-col gap-[2.9rem] md:w-[54.2rem]"
+        >
           <h2 className="font-bold font-sora text-[2rem]">Quote...</h2>
           <p className="text-[1.6rem]">
             I believe technology, when combined with passion and persistence,
@@ -201,20 +204,20 @@ export default function About() {
           <h2 className="font-bold font-sora text-[2rem] text-center">
             Interests
           </h2>
-          <p className="text-[1.6rem]">
+          <p data-aos="fade-up" className="text-[1.6rem]">
             I am passionate about leveraging technology to solve real-world
             problems and constantly seek ways to improve my skills. My main
             interests include building intuitive user interfaces with modern
             frameworks like React and Next.js, as well as exploring the
             potential of AI in enhancing human experiences.
           </p>
-          <p className="text-[1.6rem]">
+          <p data-aos="fade-up" className="text-[1.6rem]">
             I believe that technology is a powerful tool to empower people and
             bring about positive change. I enjoy helping others by simplifying
             complex technical concepts and creating solutions that make their
             lives easier.
           </p>
-          <p className="text-[1.6rem]">
+          <p data-aos="fade-up" className="text-[1.6rem]">
             Beyond development, I enjoy participating in hackathons,
             contributing to open-source projects, and staying updated with the
             latest advancements in software engineering.
