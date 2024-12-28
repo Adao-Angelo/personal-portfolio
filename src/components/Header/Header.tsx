@@ -25,7 +25,7 @@ export default function Header() {
         </div>
 
         {isMenuOpen && (
-          <div className="fixed h-[100vh] left-0 top-0 right-0 bg-white dark:bg-neutral-800 p-[2.5rem] md:hidden rounded-[0.4rem]">
+          <div className="fixed h-[100vh] left-0 top-0 right-0 bg-white z-20 dark:bg-neutral-800 p-[2.5rem] md:hidden rounded-[0.4rem]">
             <div className="flex justify-between">
               <div></div>
               <X
@@ -57,10 +57,14 @@ export default function Header() {
                   About
                 </Link>
                 <button
-                  className="text-[1.6rem] w-[10rem] px-[2rem] py-[1rem] rounded-full bg-purple-600 hover:bg-purple-700 dark:hover:bg-purple-400 text-purple-50 dark:text-purple-50"
+                  className="text-[1.6rem]  w-[10rem] px-[2rem] py-[1rem] rounded-full bg-purple-600 hover:bg-purple-700 dark:hover:bg-purple-400 text-purple-50 dark:text-purple-50"
                   onClick={toggleTheme}
                 >
-                  {theme == "dark" ? <Sun></Sun> : <Moon></Moon>}
+                  {theme == "dark" ? (
+                    <Sun></Sun>
+                  ) : (
+                    <Moon className="ml-[4rem]"></Moon>
+                  )}
                 </button>
               </div>
             </div>

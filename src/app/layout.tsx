@@ -20,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <ThemeProvider>
+    <ThemeProvider>
+      <html lang="en">
         <body
           className={`${inter.variable} ${sora.variable}
         antialiased p-[2.6rem] dark:text-neutral-50 text-neutral-900
@@ -32,7 +32,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </body>
-      </ThemeProvider>
-    </html>
+      </html>
+    </ThemeProvider>
   );
 }
