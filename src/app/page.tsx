@@ -10,7 +10,7 @@ import Link from "next/link";
 import { toast, ToastContainer } from "react-toastify";
 
 export default function Home() {
-  const { theme, toggleTheme } = useThemeContext();
+  const { theme } = useThemeContext();
   const notify = (message: string) => {
     toast(message, {
       type: "warning",
