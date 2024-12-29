@@ -1,13 +1,27 @@
+"use client";
+
 import { Project } from "@/components/Project";
 import ScrollToDown from "@/components/scrollTodown";
 import TypingEffect from "@/components/TypingEffect/TypingEffect";
 import Button from "@/components/ui/Button";
+import { useThemeContext } from "@/context/ThemeProvider";
 import { Github, Linkedin } from "lucide-react";
 import Link from "next/link";
+import { toast, ToastContainer } from "react-toastify";
 
 export default function Home() {
+  const { theme, toggleTheme } = useThemeContext();
+  const notify = (message: string) => {
+    toast(message, {
+      type: "warning",
+      position: "top-right",
+      autoClose: 5000,
+    });
+  };
+
   return (
     <div>
+      <ToastContainer theme={theme} />
       <main>
         <div className="mt-[7.9rem] md:text-center">
           <div>
@@ -63,7 +77,7 @@ export default function Home() {
           </h2>
           {/* __Project Cards */}
           <div className="grid md:grid-cols-2 gap-[3rem] lg:gap-[7rem] ">
-            <Project.Root dataAos="zoom-in-right">
+            <Project.Root>
               <Project.Image src="projects/ai.webp" alt="Project Image" />
               <Project.Content
                 title="Chat AI "
@@ -100,11 +114,16 @@ export default function Home() {
                 >
                   <Button>VIEW CODE</Button>
                 </Link>
-                {/* <Button state="outline">LIVE DEMO</Button> */}
+                <Link
+                  href="https://chat-ai-lilac-six.vercel.app/"
+                  target="_blank"
+                >
+                  <Button state="outline">LIVE DEMO</Button>
+                </Link>
               </Project.Actions>
             </Project.Root>
-            <Project.Root dataAos="zoom-in-left">
-              <Project.Image src="/projects/" alt="Project Image" />
+            <Project.Root>
+              <Project.Image src="/projects/clock.png" alt="Project Image" />
               <Project.Content
                 title="Clock Work"
                 description="
@@ -145,10 +164,13 @@ export default function Home() {
                 >
                   <Button>VIEW CODE</Button>
                 </Link>
-                {/* <Button state="outline">LIVE DEMO</Button> */}
+
+                <Link href="https://clock-work.vercel.app/" target="_blank">
+                  <Button state="outline">LIVE DEMO</Button>
+                </Link>
               </Project.Actions>
             </Project.Root>
-            <Project.Root dataAos="zoom-in-right">
+            <Project.Root>
               <Project.Image src="/projects/meal.png" alt="Project Image" />
               <Project.Content
                 title="Easy-Meal"
@@ -177,16 +199,18 @@ export default function Home() {
                   alt="PostgreSQL"
                 />
               </Project.Technologies>
-
               <Project.Actions>
-                <p className="text-red-600 dark:text-red-400 text-[1.6rem]">
-                  This is a private repository
-                </p>
-                {/* <Button>VIEW CODE</Button>
-                <Button state="outline">LIVE DEMO</Button> */}
+                <Button
+                  onClick={() => {
+                    notify("this project is private");
+                  }}
+                >
+                  VIEW CODE
+                </Button>
+                <Button state="outline">LIVE DEMO</Button>
               </Project.Actions>
             </Project.Root>
-            <Project.Root dataAos="zoom-in-left">
+            <Project.Root>
               <Project.Image src="/" alt="Project Image" />
               <Project.Content
                 title="NO offense Backend"
