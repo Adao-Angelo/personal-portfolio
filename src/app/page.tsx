@@ -27,7 +27,7 @@ export default function Home() {
           <div>
             <h1 className="font-sora font-bold text-[3.2rem] md:text-[5.6rem]">
               <TypingEffect
-                typingSpeed={120}
+                typingSpeed={80}
                 erasingSpeed={60}
                 delayBeforeErase={2500}
               >
