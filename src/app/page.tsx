@@ -211,59 +211,40 @@ export default function Home() {
               </Project.Actions>
             </Project.Root>
             <Project.Root>
-              <Project.Image src="/" alt="Project Image" />
+              <Project.Image src="/projects/news.png" alt="Project Image" />
               <Project.Content
-                title="NO offense Backend"
+                title="News Aggregations"
                 description="
-                No Offense is a project designed to automatically 
-                censor offensive words and phrases in posts, leveraging 
-                advanced context and semantic analysis to detect and suggest 
-                corrections for offensive language. The goal is to promote a 
-                healthier and more inclusive environment on communication platforms."
+                   News Aggregations is a news blog that brings together information from various sources, offering updated and relevant content on a variety of topics. The objective is to provide users with a practical and informative experience, centralizing news in a single place."
               />
               <Project.Technologies>
-                <img
-                  src="https://img.shields.io/badge/-Gemini-05122A?style=flat&logo=google"
-                  alt="Gemini"
-                />
-                <img
-                  src="https://img.shields.io/badge/-Express-05122A?style=flat&logo=express"
-                  alt="Express"
-                />
                 <img
                   src="https://img.shields.io/badge/-TypeScript-05122A?style=flat&logo=typescript"
                   alt="TypeScript"
                 />
                 <img
-                  src="https://img.shields.io/badge/-JWT-05122A?style=flat&logo=jsonwebtokens"
-                  alt="JWT"
+                  src="https://img.shields.io/badge/-React.Js-05122A?style=flat&logo=react"
+                  alt="React.js"
                 />
                 <img
                   src="https://img.shields.io/badge/-Google%20Mail-05122A?style=flat&logo=gmail"
                   alt="Google Mail"
                 />
-                <img
-                  src="https://img.shields.io/badge/-Docker-05122A?style=flat&logo=docker"
-                  alt="Docker"
-                />
-                <img
-                  src="https://img.shields.io/badge/-Prisma-05122A?style=flat&logo=prisma"
-                  alt="Prisma"
-                />
-                <img
-                  src="https://img.shields.io/badge/-Hugging%20Face-05122A?style=flat&logo=huggingface"
-                  alt="Hugging Face"
-                />
               </Project.Technologies>
 
               <Project.Actions>
                 <Link
-                  href="https://github.com/Adao-Angelo/no-offense-backend"
+                  href="https://github.com/Adao-Angelo/news-aggregations"
                   target="_blank"
                 >
                   <Button>VIEW CODE</Button>
                 </Link>
-                {/* <Button state="outline">LIVE DEMO</Button> */}
+                <Link
+                  href="https://news-aggregations.vercel.app/"
+                  target="_blank"
+                >
+                  <Button state="outline">LIVE DEMO</Button>
+                </Link>
               </Project.Actions>
             </Project.Root>
           </div>
