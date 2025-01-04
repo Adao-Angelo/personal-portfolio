@@ -78,7 +78,7 @@ export default function Home() {
           {/* __Project Cards */}
           <div className="grid md:grid-cols-2 gap-[3rem] lg:gap-[7rem] ">
             <Project.Root>
-              <Project.Image src="projects/ai.webp" alt="Project Image" />
+              <Project.Image src="projects/chat-ai.png" alt="Project Image" />
               <Project.Content
                 title="Chat AI "
                 description="ChatBot is an advanced AI-powered chatbot built 
