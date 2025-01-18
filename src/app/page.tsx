@@ -101,7 +101,10 @@ export default function Home() {
                 >
                   <Button>VIEW CODE</Button>
                 </Link>
-                <Link href="https://task-list-todo.vercel.app/" target="_blank">
+                <Link
+                  href="https://todo-list-app-009.netlify.app/"
+                  target="_blank"
+                >
                   <Button state="outline">LIVE DEMO</Button>
                 </Link>
               </Project.Actions>
