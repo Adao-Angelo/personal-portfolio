@@ -7,17 +7,10 @@ import Button from "@/components/ui/Button";
 import { useThemeContext } from "@/context/ThemeProvider";
 import { Github, Linkedin } from "lucide-react";
 import Link from "next/link";
-import { toast, ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
 export default function Home() {
   const { theme } = useThemeContext();
-  const notify = (message: string) => {
-    toast(message, {
-      type: "warning",
-      position: "top-right",
-      autoClose: 5000,
-    });
-  };
 
   return (
     <div>
