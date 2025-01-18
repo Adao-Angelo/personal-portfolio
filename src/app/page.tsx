@@ -1,23 +1,16 @@
 "use client";
 
-import { Project } from "@/components/Project";
+import Projects from "@/components/Projects/Projects";
 import ScrollToDown from "@/components/scrollTodown";
 import TypingEffect from "@/components/TypingEffect/TypingEffect";
 import Button from "@/components/ui/Button";
 import { useThemeContext } from "@/context/ThemeProvider";
 import { Github, Linkedin } from "lucide-react";
 import Link from "next/link";
-import { toast, ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
 export default function Home() {
   const { theme } = useThemeContext();
-  const notify = (message: string) => {
-    toast(message, {
-      type: "warning",
-      position: "top-right",
-      autoClose: 5000,
-    });
-  };
 
   return (
     <div>
@@ -76,210 +69,7 @@ export default function Home() {
             Projects
           </h2>
           {/* __Project Cards */}
-          <div className="grid md:grid-cols-2 gap-[3rem] lg:gap-[7rem] ">
-            <Project.Root>
-              <Project.Image src="/projects/todo.png" alt="Project Image" />
-              <Project.Content
-                title="News Aggregations"
-                description="To-Do List, your ultimate task management tool. This project is designed to help you stay organized and productive with features like drag-and-drop task management, a clean and modern UI, and real-time state management."
-              />
-              <Project.Technologies>
-                <img
-                  src="https://img.shields.io/badge/-TypeScript-05122A?style=flat&logo=typescript"
-                  alt="TypeScript"
-                />
-                <img
-                  src="https://img.shields.io/badge/-React.Js-05122A?style=flat&logo=react"
-                  alt="React.js"
-                />
-              </Project.Technologies>
-
-              <Project.Actions>
-                <Link
-                  href="https://github.com/Adao-Angelo/todo-list"
-                  target="_blank"
-                >
-                  <Button>VIEW CODE</Button>
-                </Link>
-                <Link
-                  href="https://todo-list-app-009.netlify.app/"
-                  target="_blank"
-                >
-                  <Button state="outline">LIVE DEMO</Button>
-                </Link>
-              </Project.Actions>
-            </Project.Root>
-            <Project.Root>
-              <Project.Image src="projects/chat-ai.png" alt="Project Image" />
-              <Project.Content
-                title="Chat AI "
-                description="ChatBot is an advanced AI-powered chatbot built 
-                with Next.js and TypeScript, leveraging the Vercel SDK for 
-                AI integration and Google's Gemini for semantic understanding.
-                 The chatbot is designed to provide intelligent, real-time 
-                 conversations while ensuring seamless user experience with
-                  Tailwind CSS for modern design."
-              />
-              <Project.Technologies>
-                <img
-                  src="https://img.shields.io/badge/-Typescript-05122A?style=flat&logo=typescript"
-                  alt="TypeScript"
-                />
-                <img
-                  src="https://img.shields.io/badge/-Gemini-05122A?style=flat&logo=google"
-                  alt="Gemini"
-                />
-                <img
-                  src="https://img.shields.io/badge/-AI-05122A?style=flat&logo=artificial-intelligence"
-                  alt="AI"
-                />
-                <img
-                  src="https://img.shields.io/badge/-Next.Js-05122A?style=flat&logo=next.js"
-                  alt="Next.js"
-                />
-              </Project.Technologies>
-
-              <Project.Actions>
-                <Link
-                  href="https://github.com/Adao-Angelo/chat-AI"
-                  target="_blank"
-                >
-                  <Button>VIEW CODE</Button>
-                </Link>
-                <Link
-                  href="https://chat-ai-lilac-six.vercel.app/"
-                  target="_blank"
-                >
-                  <Button state="outline">LIVE DEMO</Button>
-                </Link>
-              </Project.Actions>
-            </Project.Root>
-            <Project.Root>
-              <Project.Image src="/projects/clock.png" alt="Project Image" />
-              <Project.Content
-                title="Clock Work"
-                description="
-                This is a sleek and efficient desktop application for the 
-                clock work technique, developed using Tauri, React, and Rust. 
-                The app is designed to help users boost productivity by effectively 
-                managing their work and break intervals. With a lightweight architecture and modern 
-                design, it provides a seamless experience for staying focused and achieving goals.
-                "
-              />
-              <Project.Technologies>
-                <img
-                  src="https://img.shields.io/badge/-Typescript-05122A?style=flat&logo=typescript"
-                  alt="TypeScript"
-                />
-                <img
-                  src="https://img.shields.io/badge/-React.Js-05122A?style=flat&logo=react"
-                  alt="React.js"
-                />
-                <img
-                  src="https://img.shields.io/badge/-Tauri-05122A?style=flat&logo=tauri"
-                  alt="Tauri"
-                />
-                <img
-                  src="https://img.shields.io/badge/-TailwindCSS-05122A?style=flat&logo=tailwindcss"
-                  alt="Tailwind CSS"
-                />
-                <img
-                  src="https://img.shields.io/badge/-Rust-05122A?style=flat&logo=rust"
-                  alt="Rust"
-                />
-              </Project.Technologies>
-
-              <Project.Actions>
-                <Link
-                  href="https://github.com/Adao-Angelo/clock-work"
-                  target="_blank"
-                >
-                  <Button>VIEW CODE</Button>
-                </Link>
-
-                <Link href="https://clock-work.vercel.app/" target="_blank">
-                  <Button state="outline">LIVE DEMO</Button>
-                </Link>
-              </Project.Actions>
-            </Project.Root>
-            <Project.Root>
-              <Project.Image src="/projects/meal.png" alt="Project Image" />
-              <Project.Content
-                title="Easy-Meal"
-                description="Easy Meal is an app for shopping products aimed at improving gastronomy, made by the center
-                 Colégio Arvore Da Felicidade order to help productivity when buying foin the cafeteria. "
-              />
-              <Project.Technologies>
-                <img
-                  src="https://img.shields.io/badge/-JWT-05122A?style=flat&logo=jsonwebtokens"
-                  alt="JWT"
-                />
-                <img
-                  src="https://img.shields.io/badge/-Express-05122A?style=flat&logo=express"
-                  alt="Express"
-                />
-                <img
-                  src="https://img.shields.io/badge/-TypeScript-05122A?style=flat&logo=typescript"
-                  alt="TypeScript"
-                />
-                <img
-                  src="https://img.shields.io/badge/-Prisma-05122A?style=flat&logo=prisma"
-                  alt="Prisma"
-                />
-                <img
-                  src="https://img.shields.io/badge/-PostgreSQL-05122A?style=flat&logo=postgresql"
-                  alt="PostgreSQL"
-                />
-              </Project.Technologies>
-              <Project.Actions>
-                <Button
-                  onClick={() => {
-                    notify("this project is private");
-                  }}
-                >
-                  VIEW CODE
-                </Button>
-                <Button state="outline">LIVE DEMO</Button>
-              </Project.Actions>
-            </Project.Root>
-            <Project.Root>
-              <Project.Image src="/projects/news.png" alt="Project Image" />
-              <Project.Content
-                title="News Aggregations"
-                description="
-                   News Aggregations is a news blog that brings together information from various sources, offering updated and relevant content on a variety of topics. The objective is to provide users with a practical and informative experience, centralizing news in a single place."
-              />
-              <Project.Technologies>
-                <img
-                  src="https://img.shields.io/badge/-TypeScript-05122A?style=flat&logo=typescript"
-                  alt="TypeScript"
-                />
-                <img
-                  src="https://img.shields.io/badge/-React.Js-05122A?style=flat&logo=react"
-                  alt="React.js"
-                />
-                <img
-                  src="https://img.shields.io/badge/-Google%20Mail-05122A?style=flat&logo=gmail"
-                  alt="Google Mail"
-                />
-              </Project.Technologies>
-
-              <Project.Actions>
-                <Link
-                  href="https://github.com/Adao-Angelo/news-aggregations"
-                  target="_blank"
-                >
-                  <Button>VIEW CODE</Button>
-                </Link>
-                <Link
-                  href="https://news-aggregations.vercel.app/"
-                  target="_blank"
-                >
-                  <Button state="outline">LIVE DEMO</Button>
-                </Link>
-              </Project.Actions>
-            </Project.Root>
-          </div>
+          <Projects></Projects>
         </div>
         {/* __About */}
         <div className="flex flex-col md:flex-row gap-[6.9rem] md:justify-between mt-[7rem] md:mt-[15.7rem] mb-[6rem]">
