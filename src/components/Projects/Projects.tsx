@@ -28,7 +28,7 @@ export default function Projects() {
       <Project.Root>
         <Project.Image src="/projects/todo.png" alt="Project Image" />
         <Project.Content
-          title="News Aggregations"
+          title="Todo List"
           description="To-Do List, your ultimate task management tool. This project is designed to help you stay organized and productive with features like drag-and-drop task management, a clean and modern UI, and real-time state management."
         />
         <Project.Technologies>
