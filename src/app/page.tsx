@@ -78,6 +78,35 @@ export default function Home() {
           {/* __Project Cards */}
           <div className="grid md:grid-cols-2 gap-[3rem] lg:gap-[7rem] ">
             <Project.Root>
+              <Project.Image src="/projects/todo.png" alt="Project Image" />
+              <Project.Content
+                title="News Aggregations"
+                description="To-Do List, your ultimate task management tool. This project is designed to help you stay organized and productive with features like drag-and-drop task management, a clean and modern UI, and real-time state management."
+              />
+              <Project.Technologies>
+                <img
+                  src="https://img.shields.io/badge/-TypeScript-05122A?style=flat&logo=typescript"
+                  alt="TypeScript"
+                />
+                <img
+                  src="https://img.shields.io/badge/-React.Js-05122A?style=flat&logo=react"
+                  alt="React.js"
+                />
+              </Project.Technologies>
+
+              <Project.Actions>
+                <Link
+                  href="https://github.com/Adao-Angelo/todo-list"
+                  target="_blank"
+                >
+                  <Button>VIEW CODE</Button>
+                </Link>
+                <Link href="https://task-list-todo.vercel.app/" target="_blank">
+                  <Button state="outline">LIVE DEMO</Button>
+                </Link>
+              </Project.Actions>
+            </Project.Root>
+            <Project.Root>
               <Project.Image src="projects/chat-ai.png" alt="Project Image" />
               <Project.Content
                 title="Chat AI "
