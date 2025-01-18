@@ -9,7 +9,7 @@ export default function ProjectImage({ src, alt }: ProjectImageProps) {
       <img
         src={src}
         alt={alt}
-        className="min-w-full  rounded-[0.4rem] h-full object-cover"
+        className="min-w-full rounded-[0.4rem] h-full object-cover filter grayscale hover:grayscale-0 transition"
       />
     </div>
   );
