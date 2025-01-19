@@ -97,7 +97,7 @@ export default function Home() {
           </div>
           <div className="">
             <img
-              className="rounded-[0.5rem] md:max-w-[36.9rem]"
+              className="rounded-[0.5rem] md:max-w-[36.9rem] dark:shadow-custom-dark shadow-custom-light"
               src="/dev.jpeg"
               alt="dev"
             />
