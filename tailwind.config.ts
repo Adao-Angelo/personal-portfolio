@@ -42,6 +42,10 @@ export default {
       lineHeight: {
         base: "2rem",
       },
+      boxShadow: {
+        "custom-light": "0px 0px 150px 0px #D4D4D4",
+        "custom-dark": "0px 0px 150px 0px #404040",
+      },
     },
   },
   plugins: [],
