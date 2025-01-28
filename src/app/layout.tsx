@@ -25,6 +25,7 @@ export default function RootLayout({
         <body
           className={`${inter.variable} ${sora.variable}
         antialiased p-[2.6rem] dark:text-neutral-50 text-neutral-900
+        bg-[radial-gradient(circle,#f8f8f8_1px,transparent_1px)] dark:bg-[radial-gradient(circle,#232323_1px,transparent_1px)] bg-[length:20px_20px]
         bg-neutral-50 min-h-[full]: dark:bg-neutral-900  md:py-[7.4rem]  md:px-[3.8rem] lg:px-[12.8rem]  `}
         >
           <AOSProvider />
