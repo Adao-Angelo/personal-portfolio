@@ -26,6 +26,31 @@ export default function Projects() {
   return (
     <div className="grid md:grid-cols-2 gap-[3rem] lg:gap-[7rem] ">
       <Project.Root>
+        <Project.Image src="/projects/news.png" alt="Project Image" />
+        <Project.Content
+          title="News Aggregations"
+          description="
+           News Aggregations is a news blog that brings together information from various sources, offering updated and relevant content on a variety of topics. The objective is to provide users with a practical and informative experience, centralizing news in a single place."
+        />
+        <Project.Technologies>
+          <SiTypescript size={24} />
+          <FaReact size={24} />
+          <SiGmail size={24} />
+        </Project.Technologies>
+
+        <Project.Actions>
+          <Link
+            href="https://github.com/Adao-Angelo/news-aggregations"
+            target="_blank"
+          >
+            <Button>VIEW CODE</Button>
+          </Link>
+          <Link href="https://news-aggregations.vercel.app/" target="_blank">
+            <Button state="outline">LIVE DEMO</Button>
+          </Link>
+        </Project.Actions>
+      </Project.Root>
+      <Project.Root>
         <Project.Image src="/projects/todo.png" alt="Project Image" />
         <Project.Content
           title="Todo List"
@@ -124,31 +149,6 @@ export default function Projects() {
             VIEW CODE
           </Button>
           <Button state="outline">LIVE DEMO</Button>
-        </Project.Actions>
-      </Project.Root>
-      <Project.Root>
-        <Project.Image src="/projects/news.png" alt="Project Image" />
-        <Project.Content
-          title="News Aggregations"
-          description="
-           News Aggregations is a news blog that brings together information from various sources, offering updated and relevant content on a variety of topics. The objective is to provide users with a practical and informative experience, centralizing news in a single place."
-        />
-        <Project.Technologies>
-          <SiTypescript size={24} />
-          <FaReact size={24} />
-          <SiGmail size={24} />
-        </Project.Technologies>
-
-        <Project.Actions>
-          <Link
-            href="https://github.com/Adao-Angelo/news-aggregations"
-            target="_blank"
-          >
-            <Button>VIEW CODE</Button>
-          </Link>
-          <Link href="https://news-aggregations.vercel.app/" target="_blank">
-            <Button state="outline">LIVE DEMO</Button>
-          </Link>
         </Project.Actions>
       </Project.Root>
     </div>
