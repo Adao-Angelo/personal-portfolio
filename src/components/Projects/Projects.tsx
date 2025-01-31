@@ -71,6 +71,36 @@ export default function Projects() {
         </Project.Actions>
       </Project.Root>
       <Project.Root>
+        <Project.Image
+          src="/projects/Plant-Shop-Thumbnail.png"
+          alt="Project Image"
+        />
+        <Project.Content
+          title="Plant Shop Website"
+          description="
+          Plant Shop Website, a modern and interactive landing page developed with React, using Framer Motion, Tailwind CSS, and TypeScript for a smooth and stylish experience."
+        />
+        <Project.Technologies>
+          <SiTypescript size={24} />
+          <FaReact size={24} />
+        </Project.Technologies>
+
+        <Project.Actions>
+          <Link
+            href="https://github.com/Adao-Angelo/plant-shop-website"
+            target="_blank"
+          >
+            <Button>VIEW CODE</Button>
+          </Link>
+          <Link
+            href="https://plant-shop-website-omega.vercel.app/"
+            target="_blank"
+          >
+            <Button state="outline">LIVE DEMO</Button>
+          </Link>
+        </Project.Actions>
+      </Project.Root>
+      <Project.Root>
         <Project.Image src="projects/chat-ai.png" alt="Project Image" />
         <Project.Content
           title="Chat AI "
