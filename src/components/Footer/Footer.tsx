@@ -52,8 +52,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <p className="text-[1.2rem] text-neutral-500">
-        © Designed and coded by Nigar Safarova 💜
+      <p className="text-[1.2rem] md:text-[1.6rem] text-neutral-500">
+        © Designed by Nigar Safarova 💜
       </p>
     </footer>
   );

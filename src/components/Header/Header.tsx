@@ -73,22 +73,29 @@ export default function Header() {
 
         <div className="md:flex hidden items-center gap-[3rem]">
           <Link
-            className="text-[1.6rem] dark:hover:text-purple-400 hover:text-purple-900"
+            className="text-[1.6rem] font-medium dark:hover:text-purple-400 hover:text-purple-900"
             href="/"
           >
             Home
           </Link>
           <Link
-            className="text-[1.6rem] dark:hover:text-purple-400 hover:text-purple-900"
+            className="text-[1.6rem] font-medium dark:hover:text-purple-400 hover:text-purple-900"
             href="/#project"
           >
             Projects
           </Link>
           <Link
-            className="text-[1.6rem] dark:hover:text-purple-400 hover:text-purple-900"
+            className="text-[1.6rem] font-medium dark:hover:text-purple-400 hover:text-purple-900"
             href="/about"
           >
             About
+          </Link>
+          <Link
+            className="text-[1.6rem] font-medium dark:hover:text-purple-400 hover:text-purple-900"
+            href="/cv/cv-fullstack.pdf"
+            target="_blank"
+          >
+            cv
           </Link>
 
           <button
