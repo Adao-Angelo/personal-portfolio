@@ -38,7 +38,7 @@ const buttonColors = {
     disabled: "text-neutral-400 cursor-not-allowed dark:text-neutral-500",
     hover: "font-bold text-neutral-400 dark:underline dark:text-neutral-500",
   },
-} as Record<ButtonVariant, Record<ButtonState | "link", string>>; // Tipagem explícita
+} as Record<ButtonVariant, Record<ButtonState | "link", string>>;
 
 const Button: React.FC<ButtonProps> = ({
   children,

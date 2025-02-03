@@ -1,7 +1,7 @@
 "use client";
 
 import Projects from "@/components/Projects/Projects";
-import ScrollToDown from "@/components/scrollTodown";
+import ScrollToDown from "@/components/scrollToDown";
 import TypingEffect from "@/components/TypingEffect/TypingEffect";
 import Button from "@/components/ui/Button";
 import { useThemeContext } from "@/context/ThemeProvider";
@@ -64,7 +64,7 @@ export default function Home() {
           <ScrollToDown to="project"></ScrollToDown>
         </div>
         {/* __Projects */}
-        <div id="project">
+        <div id="project" className="mt-[30rem]">
           <h2 className="font-bold font-sora mt-[3.5rem] mb-[3rem] md:mb-[11.4rem] text-[2.8rem] text-center">
             Projects
           </h2>

@@ -24,7 +24,7 @@ export default function Projects() {
   };
 
   return (
-    <div className="grid md:grid-cols-2 gap-[3rem] lg:gap-[7rem] ">
+    <div className="grid md:grid-cols-2 gap-[3rem] lg:gap-[7rem]">
       <Project.Root>
         <Project.Image src="/projects/news.png" alt="Project Image" />
         <Project.Content
