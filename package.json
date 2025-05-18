@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-spring/web": "^9.7.5",
     "@tailwindcss/typography": "^0.5.15",
     "aos": "^2.3.4",
     "classnames": "^2.5.1",
+    "framer-motion": "^12.5.0",
     "lucide-react": "^0.469.0",
     "next": "15.1.2",
     "react": "^19.0.0",
