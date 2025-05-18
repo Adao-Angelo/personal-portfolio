@@ -124,6 +124,30 @@ export default function Projects() {
         </Project.Actions>
       </Project.Root>
       <Project.Root>
+        <Project.Image src="/projects/peppa.png" alt="Project Image" />
+        <Project.Content
+          title="Peppa Dashboard"
+          description="Multi-tenant dashboard for managing shool and student accounts, bookings and exam sheets."
+        />
+        <Project.Technologies>
+          <SiTypescript size={24} />
+          <RiNextjsLine size={24} />
+          <SiTailwindcss size={24} />
+        </Project.Technologies>
+        <Project.Actions>
+          <Button
+            onClick={() => {
+              notify("this project is private");
+            }}
+          >
+            VIEW CODE
+          </Button>
+          <Link href="https://peppa-dashboard.netlify.app/" target="_blank">
+            <Button state="outline">LIVE DEMO</Button>
+          </Link>
+        </Project.Actions>
+      </Project.Root>
+      <Project.Root>
         <Project.Image src="projects/chat-ai.png" alt="Project Image" />
         <Project.Content
           title="Chat AI "
