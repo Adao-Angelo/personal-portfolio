@@ -1,6 +1,5 @@
 "use client";
 
-import DecryptedText from "@/components/DecryptedText";
 import Projects from "@/components/Projects/Projects";
 import ScrollToDown from "@/components/scrollToDown";
 import TypingEffect from "@/components/TypingEffect/TypingEffect";
@@ -76,9 +75,7 @@ export default function Home() {
           {/* __About */}
           <div className="flex flex-col md:flex-row gap-[6.9rem] md:justify-between mt-[7rem] md:mt-[15.7rem] mb-[6rem]">
             <div className="flex flex-col gap-[2.9rem] md:w-[50.9rem]">
-              <h2 className="font-bold font-sora text-[2.8rem] ">
-                <DecryptedText text="Hi there!" />
-              </h2>
+              <h2 className="font-bold font-sora text-[2.8rem] ">Hi there!</h2>
               <p data-aos="fade-up" className="text-[1.6rem]">
                 I am a passionate and driven full-stack developer with an
                 unwavering love for technology. I thrive in challenging
