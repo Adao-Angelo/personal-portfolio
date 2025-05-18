@@ -5,6 +5,7 @@ import { RiNextjsLine } from "react-icons/ri";
 import {
   SiExpress,
   SiGmail,
+  SiJavascript,
   SiPostgresql,
   SiPrisma,
   SiTailwindcss,
@@ -68,6 +69,28 @@ export default function Projects() {
           <Link href="https://todo-list-app-009.netlify.app/" target="_blank">
             <Button state="outline">LIVE DEMO</Button>
           </Link>
+        </Project.Actions>
+      </Project.Root>
+
+      <Project.Root>
+        <Project.Image src="/projects/atm.png" alt="Project Image ATM" />
+        <Project.Content
+          title="CAF ATM Dashboard"
+          description="ATM Dashboard is an application for managing student accounts in educational institutions and handling exam sheet administration."
+        />
+        <Project.Technologies>
+          <SiJavascript size={24} />
+          <SiTailwindcss size={24} />
+        </Project.Technologies>
+        <Project.Actions>
+          <Button
+            onClick={() => {
+              notify("this project is private");
+            }}
+          >
+            VIEW CODE
+          </Button>
+          <Button state="outline">LIVE DEMO</Button>
         </Project.Actions>
       </Project.Root>
       <Project.Root>
