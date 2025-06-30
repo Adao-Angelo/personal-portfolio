@@ -4,7 +4,7 @@ A modern and responsive developer portfolio built using **Next.js**, **TypeScrip
 
 ---
 
-<img src="./assets/Cover.png"/>
+<img src="./assets/Thumbnail.png"/>
 
 ## 🚀 Features
 
