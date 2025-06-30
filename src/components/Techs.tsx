@@ -1,22 +1,11 @@
 import Badge from "./ui/Badge";
 
+import { FaDocker, FaGithub, FaNodeJs, FaReact } from "react-icons/fa";
 import {
-  FaCss3Alt,
-  FaDatabase,
-  FaDocker,
-  FaGithub,
-  FaHtml5,
-  FaJs,
-  FaNodeJs,
-  FaReact,
-} from "react-icons/fa";
-import {
-  SiExpress,
   SiMongodb,
+  SiNestjs,
   SiNextdotjs,
-  SiPostgresql,
   SiPrisma,
-  SiRedux,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
@@ -29,16 +18,8 @@ export default function Techs() {
         <Badge icon={FaGithub} iconColor={"text-gray-200"}>
           GitHub
         </Badge>
-        <Badge icon={FaHtml5} iconColor={"text-red"}>
-          HTML
-        </Badge>
-        <Badge icon={FaCss3Alt} iconColor={"text-blue"}>
-          CSS
-        </Badge>
-        <Badge icon={FaJs} iconColor={"text-yellow"}>
-          JavaScript
-        </Badge>
-        <Badge icon={SiTypescript} iconColor={"text-blue-500"}>
+
+        <Badge icon={SiTypescript} iconColor={"text-blue"}>
           TypeScript
         </Badge>
         <Badge icon={FaReact} iconColor={"text-sky-400"}>
@@ -50,16 +31,13 @@ export default function Techs() {
         <Badge icon={SiTailwindcss} iconColor={"text-cyan-400"}>
           Tailwind
         </Badge>
-        <Badge icon={SiRedux} iconColor={"text-purple-500"}>
-          Redux
-        </Badge>
 
         {/* Backend */}
         <Badge icon={FaNodeJs} iconColor={"text-green"}>
           Node.js
         </Badge>
-        <Badge icon={SiExpress} iconColor={"text-gray-400"}>
-          Express
+        <Badge icon={SiNestjs} iconColor={"text-red"}>
+          Nest
         </Badge>
         <Badge icon={SiPrisma} iconColor={"text-indigo-400"}>
           Prisma
@@ -67,13 +45,7 @@ export default function Techs() {
         <Badge icon={SiMongodb} iconColor={"text-green-600"}>
           MongoDB
         </Badge>
-        <Badge icon={SiPostgresql} iconColor={"text-blue-700"}>
-          PostgreSQL
-        </Badge>
-        <Badge icon={FaDatabase} iconColor={"text-yellow-600"}>
-          SQL
-        </Badge>
-        <Badge icon={FaDocker} iconColor={"text-blue-400"}>
+        <Badge icon={FaDocker} iconColor={"text-blue"}>
           Docker
         </Badge>
       </div>
