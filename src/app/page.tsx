@@ -7,6 +7,7 @@ import SocialSection from "@/components/social/SocialSection";
 import Techs from "@/components/Techs";
 import {
   CaretDoubleDownIcon,
+  CodeIcon,
   CodeSimpleIcon,
   DevicesIcon,
 } from "@phosphor-icons/react";
@@ -16,8 +17,14 @@ export default function Home() {
   return (
     <div className="text-center">
       <section className="bg-[url('/Background_Intro.png')] bg-cover bg-no-repeat pt-48 pb-24">
-        <div className="mx-auto w-48 h-48 mb-20">
-          <div className="bg-[url('/me.png')] w-full h-full bg-cover bg-no-repeat rounded-full" />
+        <div className="relative w-[15rem] h-[15rem] mx-auto mb-[4rem]">
+          <div className="relative w-full h-full rounded-full border-[0.3rem] border-red p-[0.4rem]">
+            <div className="w-full h-full rounded-full bg-[url('/me.png')] bg-cover bg-no-repeat" />
+          </div>
+
+          <div className="absolute bottom-0 right-0 w-[4.5rem] h-[4.5rem] bg-gray-500 rounded-full z-[1]" />
+
+          <CodeIcon className="w-[4rem] h-[4rem] absolute bottom-0 right-0 text-green z-[2]" />
         </div>
 
         <div className="max-w-6xl mx-auto px-4">
@@ -26,7 +33,7 @@ export default function Home() {
             <span className="text-red"> Adão João</span> and I am
           </h2>
 
-          <h1 className="font-asap text-title-lg text-gray-100 mt-2 mb-6">
+          <h1 className="font-asap text-title-md md:text-title-lg text-gray-100 mt-2 mb-6">
             Fullstack Developer
           </h1>
 
