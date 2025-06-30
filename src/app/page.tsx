@@ -1,111 +1,109 @@
 "use client";
 
-import Projects from "@/components/Projects/Projects";
-import ScrollToDown from "@/components/scrollToDown";
-import TypingEffect from "@/components/TypingEffect/TypingEffect";
-import Button from "@/components/ui/Button";
-import { useThemeContext } from "@/context/ThemeProvider";
-import { Github, Linkedin } from "lucide-react";
-import Link from "next/link";
-import { ToastContainer } from "react-toastify";
+import Projects from "@/components/project/Projects";
+import SectionHeader from "@/components/SectionHeader";
+import ServiceCard from "@/components/services/ServiceCard";
+import SocialSection from "@/components/social/SocialSection";
+import Techs from "@/components/Techs";
+import {
+  CaretDoubleDownIcon,
+  CodeIcon,
+  CodeSimpleIcon,
+  DevicesIcon,
+} from "@phosphor-icons/react";
+import { Paintbrush } from "lucide-react";
 
 export default function Home() {
-  const { theme } = useThemeContext();
-
   return (
-    <div>
-      <ToastContainer theme={theme} />
-      <div>
-        <main>
-          <div className="mt-[7.9rem] md:text-center">
-            <div>
-              <h1 className="font-sora font-bold text-[3.2rem] md:text-[5.6rem]">
-                <TypingEffect
-                  typingSpeed={80}
-                  erasingSpeed={60}
-                  delayBeforeErase={2500}
-                >
-                  Hi, I am Adão Ângelo João.
-                </TypingEffect>
-              </h1>
-              <h1 className="font-sora font-bold text-[2.8rem] md:text-[3.2rem]  mt-[0.5rem] mb-[2.9rem] text-purple-900 dark:text-purple-300 ">
-                Full-stack Developer
-              </h1>
-              <p className="text-[1.6rem] md:text-[2.4rem] mb-[3.1rem]">
-                I am a tech enthusiast and developer, specializing in building
-                scalable and user-friendly web applications.
-              </p>
-              <div>
-                <div className="flex gap-[2rem] my-[1.1rem] md:justify-center">
-                  <Link target="_blank" href="https://github.com/Adao-Angelo">
-                    <Button>
-                      <Github></Github>
-                    </Button>
-                  </Link>
-                  <Link
-                    target="_blank"
-                    href="https://www.linkedin.com/in/ad%C3%A3o-%C3%A2ngelo-jo%C3%A3o-238233335/"
-                  >
-                    <Button>
-                      <Linkedin></Linkedin>
-                    </Button>
-                  </Link>
+    <div className="text-center">
+      <section className="bg-[url('/Background_Intro.png')] bg-cover bg-no-repeat pt-48 pb-24">
+        <div className="relative w-[15rem] h-[15rem] mx-auto mb-[4rem]">
+          <div className="relative w-full h-full rounded-full border-[0.3rem] border-red p-[0.4rem]">
+            <div className="w-full h-full rounded-full bg-[url('/me.png')] bg-cover bg-no-repeat" />
+          </div>
 
-                  <Link
-                    target="_blank"
-                    href="https://www.linkedin.com/in/ad%C3%A3o-%C3%A2ngelo-jo%C3%A3o-238233335/"
-                  >
-                    <Button state="outline">GET IN TOUCH </Button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-center mt-[5rem] items-center">
-            <ScrollToDown to="project"></ScrollToDown>
-          </div>
-          {/* __Projects */}
-          <div id="project" className="mt-[30rem]">
-            <h2 className="font-bold font-sora mt-[3.5rem] mb-[3rem] md:mb-[11.4rem] text-[2.8rem] text-center">
-              Projects
-            </h2>
-            {/* __Project Cards */}
-            <Projects></Projects>
-          </div>
-          {/* __About */}
-          <div className="flex flex-col md:flex-row gap-[6.9rem] md:justify-between mt-[7rem] md:mt-[15.7rem] mb-[6rem]">
-            <div className="flex flex-col gap-[2.9rem] md:w-[50.9rem]">
-              <h2 className="font-bold font-sora text-[2.8rem] ">Hi there!</h2>
-              <p data-aos="fade-up" className="text-[1.6rem]">
-                I am a passionate and driven full-stack developer with an
-                unwavering love for technology. I thrive in challenging
-                environments that push me beyond my comfort zone, enabling
-                continuous learning and personal growth. My dedication to
-                creating impactful digital solutions is matched by a commitment
-                to refining my skills every day, turning ideas into meaningful
-                and user-centered experiences.
-              </p>
-              <p data-aos="fade-up" className="text-[1.6rem]">
-                I believe that every challenge is an opportunity to become
-                better and that technology is a powerful tool to bring about
-                positive change. Let&#39;s create something amazing together!
-              </p>
-              <div>
-                <Link href="/about">
-                  <Button>READ MORE</Button>
-                </Link>
-              </div>
-            </div>
-            <div className="">
-              <img
-                className="rounded-[0.5rem] md:max-w-[36.9rem] dark:shadow-custom-dark shadow-custom-light"
-                src="/dev.jpeg"
-                alt="dev"
-              />
-            </div>
-          </div>
-        </main>
-      </div>
+          <div className="absolute bottom-0 right-0 w-[4.5rem] h-[4.5rem] bg-gray-500 rounded-full z-[1]" />
+
+          <CodeIcon className="w-[4rem] h-[4rem] absolute bottom-0 right-0 text-green z-[2]" />
+        </div>
+
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="font-inconsolata text-subtitle text-gray-200">
+            Hello World! My name is
+            <span className="text-red"> Adão João</span> and I am
+          </h2>
+
+          <h1 className="font-asap text-title-md md:text-title-lg text-gray-100 mt-2 mb-6">
+            Fullstack Developer
+          </h1>
+
+          <p className="font-maven text-text-sm text-gray-300 leading-relaxed">
+            Transform needs into real, evolving and functional applications. I
+            develop systems through my passion for technology, contributing to
+            innovative and effective solutions to complex challenges.
+          </p>
+        </div>
+
+        <div className="my-32">
+          <Techs />
+        </div>
+
+        <CaretDoubleDownIcon className="text-gray-300 mx-auto" size={24} />
+      </section>
+
+      <section className="py-[8rem]">
+        <SectionHeader subtitle="My works" title="See the prominent projects" />
+
+        <div className="p-[1.8rem]">
+          <Projects></Projects>
+        </div>
+      </section>
+
+      <section className="bg-gray-600 py-[8.8rem] text-left px-4 ">
+        <SectionHeader
+          subtitle="My services"
+          title="How I can help your business"
+        />
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[100rem] m-auto">
+          <ServiceCard
+            icon={DevicesIcon}
+            iconColor="text-purple"
+            title="Websites & Apps"
+            description="Development of responsive and modern interfaces"
+          />
+          <ServiceCard
+            icon={CodeSimpleIcon}
+            iconColor="text-yellow"
+            title="Backend Systems"
+            description="Secure, scalable and efficient APIs and integrations"
+          />
+          <ServiceCard
+            icon={Paintbrush}
+            iconColor="text-green"
+            title="UI/UX Design"
+            description="Design focused on usability and beautiful user experience"
+          />
+        </div>
+      </section>
+
+      <section className="bg-[url('/Background_Contacts.png')] py-[12.8rem] bg-cover bg-no-repeat">
+        <div className="mb-[8rem]  text-center">
+          <h2 className="font-inconsolata text-subtitle text-red mb-[1.6rem]">
+            Contact
+          </h2>
+          <h1 className="font-asap text-title-md text-gray-100">
+            Did you like my work?
+          </h1>
+          <p className="font-maven text-text-sm text-gray-300 leading-relaxed mt-[0.8rem]">
+            Contact or follow my social networks!
+          </p>
+        </div>
+
+        <div className="max-w-[40rem] m-auto">
+          <SocialSection />
+        </div>
+      </section>
     </div>
   );
 }
