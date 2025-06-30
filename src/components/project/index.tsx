@@ -7,7 +7,7 @@ interface projectProps {
 }
 export default function Project({ image, title, description }: projectProps) {
   return (
-    <div className="rounded-[1.2rem] bg-gray-400 p-[1.2rem] text-left">
+    <div className="rounded-[1.2rem] bg-gray-400  p-[1.2rem] text-left border border-gray-400 transition-colors duration-500  hover:border-gray-300">
       <div>
         <Image
           className="w-full h-[15rem] rounded-[1.2rem] object-cover"
